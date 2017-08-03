@@ -1,4 +1,4 @@
-# x4−3x3+2
+# f(x) = x^4−3x^3+2
 
 # From calculation, it is expected that the local minimum occurs at x=9/4
 
@@ -7,9 +7,6 @@ gamma = 0.01 # step size multiplier
 precision = 0.00001
 previous_step_size = 1
 n = 0
-
-def df1(x):
-    return 12 * x**2 - 18 * x
     
 def df(x):
     return 4 * x**3 - 9 * x**2
