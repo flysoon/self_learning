@@ -1,12 +1,6 @@
-# x4−3x3+2
+# f(x) = x^4−3x^3+2
 
 # From calculation, it is expected that the local minimum occurs at x=9/4
-
-cur_x = 6 # The algorithm starts at x=6
-gamma = 0.01 # step size multiplier
-precision = 0.00001
-previous_step_size = 1
-n = 0
 
 def df1(x):
     return 12 * x**2 - 18 * x
@@ -16,7 +10,8 @@ def df(x):
 
 # newton method
 
-cur_x = 1.8 # The algorithm starts at x=6
+cur_x = 6 # The algorithm starts at x=6
+# if setting cur_x = 1, algorithm will converge to another solution: 0
 precision = 0.00001
 previous_step_size = 1
 n = 0
